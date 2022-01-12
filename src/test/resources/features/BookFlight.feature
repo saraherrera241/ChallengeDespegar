@@ -7,7 +7,7 @@ Feature: Title of your feature
   Scenario Outline: Book a flight
     Given I open despegar page
     When I search for flights with <originFlight> and <destinationFlight>
-    Then I validate Idiom added
+    Then I validate message
 
     Examples: 
       | originFlight | destinationFlight |

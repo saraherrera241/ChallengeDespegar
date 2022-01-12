@@ -41,8 +41,8 @@ public class BookFlightStepDefinition {
 		actor.attemptsTo(BuyFlight.buy());
 	}
 
-	@Then("^I validate Idiom added$")
-	public void validateIdiomAdded() {
+	@Then("^I validate message$")
+	public void validateMessage() {
 		actor.should(seeThat(VerifyMessage.value(BookFlightUi.MESSAGE_FINAL),
 				containsString(MessageValidations.MESSAGE)));
 		driver.close();

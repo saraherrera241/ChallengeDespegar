@@ -1,6 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Title of your feature" skipped="0" tests="1" time="99.94" timestamp="2022-01-12 04:10:54"><testcase name="Book a flight"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-tasks.BuyFlight.performAs(BuyFlight.java:16)&#13;
-stepdefinitions.BookFlightStepDefinition.addIdiom(BookFlightStepDefinition.java:41)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Title of your feature" skipped="0" tests="1" time="201.1" timestamp="2022-01-12 05:04:58"><testcase name="Book a flight"><error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=97.0.4692.71)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CPX-FXUQIC1LT08', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\SARA~1.HER\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:64985}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c3b702cd4cd2b1607db7ede74966a0d6&#10;*** Element info: {Using=xpath, value=//h2[contains(text(),'�Falta poco! Completa tus datos y finaliza tu comp')]}" type="java.lang.AssertionError">no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CPX-FXUQIC1LT08', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\SARA~1.HER\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:64985}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c3b702cd4cd2b1607db7ede74966a0d6
+*** Element info: {Using=xpath, value=//h2[contains(text(),'�Falta poco! Completa tus datos y finaliza tu comp')]}</error><system-err>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CPX-FXUQIC1LT08', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\SARA~1.HER\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:64985}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c3b702cd4cd2b1607db7ede74966a0d6
+*** Element info: {Using=xpath, value=//h2[contains(text(),'�Falta poco! Completa tus datos y finaliza tu comp')]}&#13;
+questions.VerifyMessage.answeredBy(VerifyMessage.java:19)&#13;
+questions.VerifyMessage.answeredBy(VerifyMessage.java:1)&#13;
+stepdefinitions.BookFlightStepDefinition.validateIdiomAdded(BookFlightStepDefinition.java:46)&#13;
 cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
 org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
 org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;

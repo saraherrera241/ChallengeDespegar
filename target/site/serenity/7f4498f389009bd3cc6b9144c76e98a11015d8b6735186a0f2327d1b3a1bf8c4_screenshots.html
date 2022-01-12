@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-01-2022 16:10</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-01-2022 17:04</span>
     <br style="clear:left"/>
 </div>
 
@@ -201,9 +201,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Book a flight
+                                <span class="error-color">Book a flight
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -230,7 +230,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Assertion error: no such window: target window already closed</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -246,20 +246,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>java.lang.AssertionError </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>tasks.BuyFlight.performAs(BuyFlight.java:16)<br />stepdefinitions.BookFlightStepDefinition.addIdiom(BookFlightStepDefinition.java:41)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)<br /></pre>
+                        <pre>questions.VerifyMessage.answeredBy(VerifyMessage.java:19)<br />questions.VerifyMessage.answeredBy(VerifyMessage.java:1)<br />stepdefinitions.BookFlightStepDefinition.validateIdiomAdded(BookFlightStepDefinition.java:46)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //body/div[@id='flights-container-wrapper']/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[4]/app-root[1]/app-common[1]/items[1]/div[1]/span[1]/div[1]/span[1]/cluster[1]/div[1]/div[1]/div[2]/fare[1]/span[1]/span[1]/div[2]/buy-button[1]/a[1] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>tasks.BuyFlight.performAs(BuyFlight.java :16)<br />stepdefinitions.BookFlightStepDefinition.addIdiom(BookFlightStepDefinition.java :41)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :541)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :763)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :463)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :209)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -272,37 +265,40 @@
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="2af634ff94c0bb7c8ed3759626c6b7a3ab89b93047a6df5d8624caebcc64ee4a.png" title=" Example: {originFlight=Medell&iacute;n, destinationFlight=Bogota}" width="1920"/>
-                <img src="2af634ff94c0bb7c8ed3759626c6b7a3ab89b93047a6df5d8624caebcc64ee4a.png" title=" Given I open despegar page" width="1920"/>
-                <img src="2af634ff94c0bb7c8ed3759626c6b7a3ab89b93047a6df5d8624caebcc64ee4a.png" title=" Actor opens the Open web site ui" width="1920"/>
-                <img src="2af634ff94c0bb7c8ed3759626c6b7a3ab89b93047a6df5d8624caebcc64ee4a.png" title=" Given I open despegar page (completed)" width="1920"/>
-                <img src="2af634ff94c0bb7c8ed3759626c6b7a3ab89b93047a6df5d8624caebcc64ee4a.png" title=" When I search for flights with Medell&iacute;n and Bogota" width="1920"/>
-                <img src="f8385082e5e09d9e26be1bc17278a712345194243bab62c8e1a90bcf6555bcc7.png" title=" Actor search flights" width="1920"/>
-                <img src="f8385082e5e09d9e26be1bc17278a712345194243bab62c8e1a90bcf6555bcc7.png" title=" Actor enters 'Medell&iacute;n' into Input origin flight" width="1920"/>
-                <img src="d49bf3faa4be041ae8359eb697dbfe0a078071f764472dc3efb9d513cccd86e1.png" title=" Actor enters 'Medell&iacute;n' into Input origin flight (completed)" width="1920"/>
-                <img src="d49bf3faa4be041ae8359eb697dbfe0a078071f764472dc3efb9d513cccd86e1.png" title=" Actor enters 'Medell&iacute;n' into Input origin flight" width="1920"/>
-                <img src="d49bf3faa4be041ae8359eb697dbfe0a078071f764472dc3efb9d513cccd86e1.png" title=" Actor enters 'Medell&iacute;n' into Input origin flight (completed)" width="1920"/>
-                <img src="f7c5e08dbdf55f6b541c8cad5034613db087349784ebd13da923269a8256c5ce.png" title=" Actor types 'SPACE' in Input origin flight" width="1920"/>
-                <img src="df8220becd0b7b99387cb510b5516ba15d72d9179942b7b3ae0853a3528568d4.png" title=" Actor types 'SPACE' in Input origin flight (completed)" width="1920"/>
-                <img src="df8220becd0b7b99387cb510b5516ba15d72d9179942b7b3ae0853a3528568d4.png" title=" Actor types 'SPACE' in Input origin flight" width="1920"/>
-                <img src="6a1caf30dd44d1e28ed29479517db8d344bf91380116e88b2a7e802a0bab0849.png" title=" Actor types 'SPACE' in Input origin flight (completed)" width="1920"/>
-                <img src="6a1caf30dd44d1e28ed29479517db8d344bf91380116e88b2a7e802a0bab0849.png" title=" Actor enters 'Bogota' into Input destination flight" width="1920"/>
-                <img src="6ecc1903d52e4f33305500f14f06551c5796d98105419aa39bfc03c1fba8daf1.png" title=" Actor enters 'Bogota' into Input destination flight (completed)" width="1920"/>
-                <img src="6ecc1903d52e4f33305500f14f06551c5796d98105419aa39bfc03c1fba8daf1.png" title=" Actor types 'ENTER' in Input destination flight" width="1920"/>
-                <img src="b79197c90dfd5e787e0fec82c1cafb6fa80fa9fb6cfbe3dc7cff822e4ca731bd.png" title=" Actor types 'ENTER' in Input destination flight (completed)" width="1920"/>
-                <img src="b79197c90dfd5e787e0fec82c1cafb6fa80fa9fb6cfbe3dc7cff822e4ca731bd.png" title=" Actor clicks on Button dates" width="1920"/>
-                <img src="a592b49862886148f6c9f944134da09fc8f59beb9904cece6e02c4fa68be20a8.png" title=" Actor clicks on Button dates (completed)" width="1920"/>
-                <img src="a592b49862886148f6c9f944134da09fc8f59beb9904cece6e02c4fa68be20a8.png" title=" Actor clicks on Select departure date" width="1920"/>
-                <img src="a29054848f10fa7f160d517d129c0cfa2e37b14f879300ef0d473a5b41f801fc.png" title=" Actor clicks on Select departure date (completed)" width="1920"/>
-                <img src="a29054848f10fa7f160d517d129c0cfa2e37b14f879300ef0d473a5b41f801fc.png" title=" Actor clicks on Select departure date" width="1920"/>
-                <img src="323bc011297b44ccedaf9d8720812b4a8c08a29ce57ec78836c02e024e0f4a35.png" title=" Actor clicks on Select departure date (completed)" width="1920"/>
-                <img src="323bc011297b44ccedaf9d8720812b4a8c08a29ce57ec78836c02e024e0f4a35.png" title=" Actor clicks on Button apply" width="1920"/>
-                <img src="c72975953280856309ddb1e8f921826c89850a74412bb6c21b6ad30005b5ee5f.png" title=" Actor clicks on Button apply (completed)" width="1920"/>
-                <img src="c72975953280856309ddb1e8f921826c89850a74412bb6c21b6ad30005b5ee5f.png" title=" Actor clicks on Button search flights" width="1920"/>
-                <img src="2694f772beea7e16d08f7d4924b576f9fcebaf3f74f4885a816dff9bb77d05e7.png" title=" Actor clicks on Button search flights (completed)" width="1920"/>
-                <img src="2694f772beea7e16d08f7d4924b576f9fcebaf3f74f4885a816dff9bb77d05e7.png" title=" Actor search flights (completed)" width="1920"/>
-                <img src="2694f772beea7e16d08f7d4924b576f9fcebaf3f74f4885a816dff9bb77d05e7.png" title=" Actor buy flight" width="1920"/>
-                <img src="2694f772beea7e16d08f7d4924b576f9fcebaf3f74f4885a816dff9bb77d05e7.png" title=" Actor clicks on Button buy: <span class='failing-color'>FAILURE</span>" width="1920"/>
+                <img src="805585552068de7b8535734fc7c71cb3b168cacbc9ee496b4b7f70f5ee312665.png" title=" Example: {originFlight=Medell&iacute;n, destinationFlight=Bogota}" width="1920"/>
+                <img src="805585552068de7b8535734fc7c71cb3b168cacbc9ee496b4b7f70f5ee312665.png" title=" Given I open despegar page" width="1920"/>
+                <img src="805585552068de7b8535734fc7c71cb3b168cacbc9ee496b4b7f70f5ee312665.png" title=" Actor opens the Open web site ui" width="1920"/>
+                <img src="805585552068de7b8535734fc7c71cb3b168cacbc9ee496b4b7f70f5ee312665.png" title=" Given I open despegar page (completed)" width="1920"/>
+                <img src="805585552068de7b8535734fc7c71cb3b168cacbc9ee496b4b7f70f5ee312665.png" title=" When I search for flights with Medell&iacute;n and Bogota" width="1920"/>
+                <img src="ab2edf20e9fbceae65fffb26bf0bfd6e9618735e69ca52306720e3e67b44dc93.png" title=" Actor search flights" width="1920"/>
+                <img src="ab2edf20e9fbceae65fffb26bf0bfd6e9618735e69ca52306720e3e67b44dc93.png" title=" Actor enters 'Medell&iacute;n' into Input origin flight" width="1920"/>
+                <img src="c96d43719c5a403436e77e5c6010e279af305f9248e66c5efb57992bdf403b3e.png" title=" Actor enters 'Medell&iacute;n' into Input origin flight (completed)" width="1920"/>
+                <img src="c96d43719c5a403436e77e5c6010e279af305f9248e66c5efb57992bdf403b3e.png" title=" Actor types 'ENTER' in Input origin flight" width="1920"/>
+                <img src="391ac93ccaa63a8048f7ca1bc0ad6554da187f5f82db0d6251237601428b0684.png" title=" Actor types 'ENTER' in Input origin flight (completed)" width="1920"/>
+                <img src="391ac93ccaa63a8048f7ca1bc0ad6554da187f5f82db0d6251237601428b0684.png" title=" Actor enters 'Bogota' into Input destination flight" width="1920"/>
+                <img src="385bc1dd1d934f46bd94d28655604529b6e8b43f91c768262eb7d9ab886779a8.png" title=" Actor enters 'Bogota' into Input destination flight (completed)" width="1920"/>
+                <img src="385bc1dd1d934f46bd94d28655604529b6e8b43f91c768262eb7d9ab886779a8.png" title=" Actor types 'ENTER' in Input destination flight" width="1920"/>
+                <img src="3519e52dfe8d084f1fd623e7d638910b75086b981b14b93aa2f2bc3e8b90e7d8.png" title=" Actor types 'ENTER' in Input destination flight (completed)" width="1920"/>
+                <img src="3519e52dfe8d084f1fd623e7d638910b75086b981b14b93aa2f2bc3e8b90e7d8.png" title=" Actor clicks on Button dates" width="1920"/>
+                <img src="e3c93ba8f0ffecbb7efd5c0b9a41b22578c0dd0ff9d80ef11df9e4d5fa335a25.png" title=" Actor clicks on Button dates (completed)" width="1920"/>
+                <img src="e3c93ba8f0ffecbb7efd5c0b9a41b22578c0dd0ff9d80ef11df9e4d5fa335a25.png" title=" Actor clicks on Select departure date" width="1920"/>
+                <img src="20e51e524bff9e0d90d2eef71be0144c989700b50ff9127a38d3893c745c49ff.png" title=" Actor clicks on Select departure date (completed)" width="1920"/>
+                <img src="20e51e524bff9e0d90d2eef71be0144c989700b50ff9127a38d3893c745c49ff.png" title=" Actor clicks on Select departure date" width="1920"/>
+                <img src="b4c5fba479f1c756754093af2fc2df6022b67422621afd5c99cb39f46e48d3ad.png" title=" Actor clicks on Select departure date (completed)" width="1920"/>
+                <img src="b4c5fba479f1c756754093af2fc2df6022b67422621afd5c99cb39f46e48d3ad.png" title=" Actor clicks on Button apply" width="1920"/>
+                <img src="2018e0baee92e38565dd3b4bf99657a2554f3b8f3013327d30d4ee85dea8bc98.png" title=" Actor clicks on Button apply (completed)" width="1920"/>
+                <img src="2018e0baee92e38565dd3b4bf99657a2554f3b8f3013327d30d4ee85dea8bc98.png" title=" Actor clicks on Button search flights" width="1920"/>
+                <img src="7eb2eebd5fde836cc5b2897f20108916e776a3eb05bea3b7b33474e9b887cb4a.png" title=" Actor search flights" width="1920"/>
+                <img src="7eb2eebd5fde836cc5b2897f20108916e776a3eb05bea3b7b33474e9b887cb4a.png" title=" Actor clicks on Button search flights (completed)" width="1920"/>
+                <img src="cf2630a89c4418ce50be9fbae6e72dea7510c8bccf254f33b2c057cd14e330e2.png" title=" Actor buy flight" width="1920"/>
+                <img src="cf2630a89c4418ce50be9fbae6e72dea7510c8bccf254f33b2c057cd14e330e2.png" title=" Actor clicks on Button buy" width="1920"/>
+                <img src="f460e367aac709253f7d43ba029db343a18b4f1d5f7de833e34307a1520121c6.png" title=" Actor clicks on Button buy (completed)" width="1920"/>
+                <img src="f460e367aac709253f7d43ba029db343a18b4f1d5f7de833e34307a1520121c6.png" title=" Actor clicks on Button continue" width="1920"/>
+                <img src="76463c97d1aaae98c10f8c2f6d7bc0bb5d20e0959c940bd6f6741e1c5e54d56d.png" title=" Actor buy flight" width="1920"/>
+                <img src="76463c97d1aaae98c10f8c2f6d7bc0bb5d20e0959c940bd6f6741e1c5e54d56d.png" title=" Actor clicks on Button continue (completed)" width="1920"/>
+                <img src="76463c97d1aaae98c10f8c2f6d7bc0bb5d20e0959c940bd6f6741e1c5e54d56d.png" title=" When I search for flights with Medell&iacute;n and Bogota (completed)" width="1920"/>
+                <img src="76463c97d1aaae98c10f8c2f6d7bc0bb5d20e0959c940bd6f6741e1c5e54d56d.png" title=" Then I validate Idiom added" width="1920"/>
+                <img src="c9de22dd3c881d00bd70693ce62784bb105656a7fb48220849167ef8928e8881.png" title=" Then verify message should be a string containing '&amp;iexcl;Falta poco! Completa tus datos y finaliza tu compra': <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 
