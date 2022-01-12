@@ -25,12 +25,13 @@ public class SearchFlights implements Task {
 	public <T extends Actor> void performAs(T actor) {
 
 		actor.attemptsTo(Enter.theValue(originFlight).into(BookFlightUi.TXT_ORIGIN_FLIGHT),
-				Enter.theValue(originFlight).into(BookFlightUi.TXT_ORIGIN_FLIGHT),
 				Hit.the(Keys.ENTER).keyIn(BookFlightUi.TXT_ORIGIN_FLIGHT),
 				Enter.theValue(destinationFlight).into(BookFlightUi.TXT_DESTINATION_FLIGHT),
 				Hit.the(Keys.ENTER).keyIn(BookFlightUi.TXT_DESTINATION_FLIGHT), Click.on(BookFlightUi.BTN_DATES),
 				Click.on(BookFlightUi.SELECT_DEPARTURE_DATE), Click.on(BookFlightUi.SELECT_RETURN_DATE),
 				Click.on(BookFlightUi.BTN_APPLY), Click.on(BookFlightUi.BTN_SEARCH));
+		
+	
 		
 
 	}
